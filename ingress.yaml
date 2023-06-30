@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: ashu-ingress
-  namespace: ashu-final-app
+  namespace: navi-final-app
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
@@ -15,6 +15,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: ashulb # name of service 
+            name: navilb # name of service 
             port:
               number: 80 # port of service
