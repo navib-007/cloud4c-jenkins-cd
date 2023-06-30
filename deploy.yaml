@@ -5,18 +5,18 @@ metadata:
   labels:
     app: ashu-appweb
   name: ashu-appweb
-  namespace: ashu-final-app
+  namespace: navi-final-app
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: ashu-appweb
+      app: navi-appweb
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: ashu-appweb
+        app: navi-appweb
     spec:
       containers:
       - image: dockerashu/ashuweb:sec-check16
